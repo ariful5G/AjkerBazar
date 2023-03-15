@@ -1,0 +1,40 @@
+
+3 type seed
+        1-1 jinis bar bar asbe
+        2-fake vabe onek asbe
+        3-nije ja cabo seta asbe
+
+
+
+        1st migration create => commond => php artisan make:migration add_status_categories_table --table=products
+        then
+        php artisan migrate
+
+        2nd Model create => commond   => php artisan make:Model Category
+
+        3rd go to seeder => commond   => DatabaseSeeder.php => code => 
+[
+
+//1-1 jinis bar bar asbe
+        4rd factory create => commond => php artisan make:factory CategoryFactory
+
+                {
+                        return [
+                        'title'=>'Men',
+                        'description'=>'Men Description'
+                        ];
+                }
+// 2-fake vabe onek asbe
+                {                                                                      video => 38 part 1 ( 52 minite 40 second)
+                        return [
+                        'title'=>$this->faker->word,
+                        'description'=>$this->faker->paragraph
+                        'image'=>$this->faker->image($dir, $width, $height, 'cats', false)   
+                        ];
+                }
+
+                php artisan storage:link  => for image
+
+//3-nije ja cabo seta asbe  == seeder diy DatabaseSeeder er sathe link kore
+
+]

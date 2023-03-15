@@ -1,0 +1,41 @@
+1        git e push korle { .env , vendor } tule na
+
+
+2       @stack('js')
+
+        @push('js')
+        @endpush
+
+
+
+3       {{ $title ?? 'Dashboard' }}
+
+        <x-slot:title>
+                Custom Title
+        </x-slot>
+
+
+4 video 37/38
+
+        artisan optimize
+        artisan optimize:clear
+
+        php artisan migrate
+        php artisan migrate:status
+
+        php artisan migrate:rollback
+        php artisan migrate:rollback --step=1
+
+         php artisan make:migration add_status_products_table --table=products
+
+         php artisan migrate:refresh
+
+         php artisan migrate --path=database\migrations\2023_03_10_103205_add_status_products_table.php
+
+5 video 38  seeder
+
+        php artisan make:Model Category
+        php artisan make:factory CategoryFactory
+        php artisan db:seed
+        
+

@@ -1,0 +1,61 @@
+//   public function show(Category $category){
+ 
+//        // $category=Category::find($id); 
+//        return view('backend.category.show',compact('category'));
+//    }
+ 
+ 
+ 
+ 
+//  public function destroy(Category $category){
+ 
+//        $category->delete();
+//        return redirect()->route('category.index')->with('message', 'Data Delete Sucessfully!');
+ 
+//        // $category=Category::find($id); 
+//        // return view('backend.category.show',compact('category'));
+//    }
+ 
+ 
+ 
+ 
+ 
+ 
+//  public function edit(Category $category)
+//    {
+       
+//        return view('backend.category.edit',compact('category'));
+//    }
+ 
+ 
+ 
+//  public function update(Category $category,Request $request)
+//          {
+             
+//              try {
+ 
+ 
+//                  $request->validate([
+//                      'title'=>['required','min:5','max:20',Rule::unique('categories','title')],
+//                      'description' => 'required',
+                     
+//                  ]);
+//                  $category->update([
+//                      'title' => $request->title,
+//                      'description' => $request->description,
+         
+//                  ]);
+//                  return redirect()->route('category.index')->with('message','Category Updated Successfully');
+                 
+               
+                 
+               
+//                } catch (QueryException $e) {
+               
+                 
+//                    \Log()::error($e->getMessage());
+//                    return redirect()->back()->withInput()->withErrors('Something went wrong ! please try again');
+                   
+//                }
+//          }  
+ 

@@ -1,0 +1,9 @@
+image er jonno web side link
+
+https://image.intervention.io/v2/introduction/installation#integration-in-laravel
+
+// usage inside a laravel route
+Route::get('/', function() {
+    $img = Image::make('foo.jpg')->resize(300, 200);
+    return $img->response('jpg');
+});
